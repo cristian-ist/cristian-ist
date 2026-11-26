@@ -1,0 +1,63 @@
+# Generates the two stats images used in profile/README.md:
+#   metrics/org.svg          -> TechCorner-Solutions: repositories and languages
+#   metrics/cristian-ist.svg -> cristian-ist: repositories, activity and languages
+#
+# Needs one repository secret, METRICS_TOKEN: a classic personal access token
+# from cristian-ist with the scopes  repo, read:org, read:user.
+# (repo lets the languages count private repositories too; without it only public ones count.)
+
+name: Metrics
+
+on:
+  schedule:
+    - cron: "17 3 * * *"   # every night, 03:17 UTC
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [".github/workflows/metrics.yml"]
+
+permissions:
+  contents: write
+
+jobs:
+  metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Organization
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics/org.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          user: TechCorner-Solutions
+          template: classic
+          base: header, repositories
+          config_timezone: Europe/Bucharest
+          config_display: regular
+          plugin_languages: yes
+          plugin_languages_sections: most-used
+          plugin_languages_details: percentage
+          plugin_languages_limit: 8
+          plugin_languages_ignored: html, css, scss, batchfile, powershell
+          plugin_languages_colors: github
+
+      - name: cristian-ist
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics/cristian-ist.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          user: cristian-ist
+          template: classic
+          base: header, activity, repositories
+          repositories_affiliations: owner, organization_member
+          config_timezone: Europe/Bucharest
+          config_display: regular
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: half-year
+          plugin_languages: yes
+          plugin_languages_sections: most-used
+          plugin_languages_details: percentage
+          plugin_languages_limit: 8
+          plugin_languages_ignored: html, css, scss, batchfile, powershell
+          plugin_languages_colors: github
