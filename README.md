@@ -25,7 +25,7 @@
 | Product | What it does |
 |---|---|
 | **[4Tify](https://4tify.io)** | Security testing and monitoring: automated weekly scans, pentests, live reports for clients, EDR monitoring and an on-prem AI. |
-| **PlusHLab** | Developer operations: dedicated dev and deploy spaces, GitHub integration, an AI reviewer on every pull request, logs and docs. |
+| **[PlusHLab](https://plushlab.app)** | Developer operations: dedicated dev and deploy spaces, GitHub integration, an AI reviewer on every pull request, logs and docs. |
 | **Zoova** | A platform for veterinary practices. |
 
 I also build and migrate industrial software for the oil &amp; gas inspection sector (Electron + NestJS, React Native, .NET → Node.js / Angular).
