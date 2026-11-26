@@ -49,11 +49,14 @@ I contribute to projects I use, including [Coolify](https://github.com/coollabsi
 Older client and open-source work lives at [DevotomSolution](https://github.com/DevotomSolution).
 
 ### Stats
-
+<p align="center">
 [![An image of @cristianist's Holopin badges, which is a link to view their full Holopin profile](https://holopin.me/cristianist)](https://holopin.io/@cristianist)
 
 [![Cristian Istrate profile views](https://u8views.com/api/v1/github/profiles/173792270/views/day-week-month-total-count.svg)](https://u8views.com/github/cristian-ist)
 
 ![cristian-ist's Streak](https://github-readme-streak-stats.herokuapp.com/?user=cristian-ist&theme=tokyonight&hide_border=true)
 
-![GitHub overview](https://raw.githubusercontent.com/cristian-ist/github-stats/master/generated/overview.svg#gh-dark-mode-only)
+<img src="https://raw.githubusercontent.com/cristian-ist/.github/main/metrics/org.svg" alt="TechCorner Solutions: repositories and languages" width="480">
+<img src="https://raw.githubusercontent.com/cristian-ist/.github/main/metrics/cristian-ist.svg" alt="cristian-ist: repositories, activity and languages" width="480">
+
+</p>
