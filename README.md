@@ -56,7 +56,7 @@ Older client and open-source work lives at [DevotomSolution](https://github.com/
 
 ![cristian-ist's Streak](https://github-readme-streak-stats.herokuapp.com/?user=cristian-ist&theme=tokyonight&hide_border=true)
 
-<img src="https://raw.githubusercontent.com/cristian-ist/.github/main/metrics/org.svg" alt="TechCorner Solutions: repositories and languages" width="480">
+<img src="https://github.com/cristian-ist/cristian-ist/blob/main/metrics/cristian-ist.svg" alt="TechCorner Solutions: repositories and languages" width="480">
 <img src="https://raw.githubusercontent.com/cristian-ist/.github/main/metrics/cristian-ist.svg" alt="cristian-ist: repositories, activity and languages" width="480">
 
 </p>
